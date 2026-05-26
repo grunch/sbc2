@@ -1,10 +1,8 @@
 import {
   ArrowRight,
   BadgeCheck,
-  Briefcase,
   Building2,
   GraduationCap,
-  LayoutGrid,
   LineChart,
   Menu,
   MessageSquareQuote,
@@ -192,21 +190,6 @@ function App() {
                 </div>
               </div>
 
-              <div className="hero-card hero-card-floating top-card">
-                <Briefcase size={20} />
-                <div>
-                  <strong>Soluciones a medida</strong>
-                  <span>Diseñadas para cada organización</span>
-                </div>
-              </div>
-
-              <div className="hero-card hero-card-floating bottom-card">
-                <LayoutGrid size={20} />
-                <div>
-                  <strong>Procesos más claros</strong>
-                  <span>Estructura, desempeño y acompañamiento</span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
