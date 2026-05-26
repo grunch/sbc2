@@ -2,6 +2,7 @@ import {
   ArrowRight,
   BadgeCheck,
   Building2,
+  CheckCircle2,
   GraduationCap,
   LineChart,
   Menu,
@@ -11,6 +12,7 @@ import {
   Target,
   Users,
 } from 'lucide-react'
+import sbcLogo from './assets/sbc-logo.jpg'
 import './App.css'
 
 const services = [
@@ -109,9 +111,7 @@ const cases = [
 function LogoMark() {
   return (
     <div className="logo-lockup" aria-label="SBC Consultores">
-      <div className="logo-mark" aria-hidden="true">
-        <span className="logo-s">S</span>
-      </div>
+      <img className="logo-image" src={sbcLogo} alt="SBC Consultores" />
       <div className="logo-text">
         <span className="logo-main">SBC</span>
         <span className="logo-sub">CONSULTORES</span>
@@ -152,10 +152,10 @@ function App() {
                 <BadgeCheck size={16} />
                 Consultoría organizacional y gestión humana
               </div>
-              <h1>Transformamos la gestión humana en una ventaja estratégica</h1>
+              <h1>Convertimos la gestión humana en una ventaja real para tu empresa</h1>
               <p className="hero-text">
-                Ayudamos a empresas a atraer, desarrollar y organizar su talento con
-                soluciones claras, modernas y alineadas con sus objetivos de negocio.
+                Diseñamos soluciones de consultoría organizacional y talento humano para
+                empresas que necesitan ordenar procesos, fortalecer equipos y crecer con más claridad.
               </p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#contacto">
@@ -170,22 +170,29 @@ function App() {
 
             <div className="hero-panel">
               <div className="hero-card hero-card-main">
+                <div className="hero-card-brand">
+                  <img src={sbcLogo} alt="Logo SBC Consultores" />
+                </div>
                 <div className="hero-card-header">
                   <span>Gestión humana con criterio</span>
                   <span className="status-dot"></span>
                 </div>
-                <div className="hero-metrics">
+                <p className="hero-card-text">
+                  Acompañamos a organizaciones que necesitan estructurar mejor su talento,
+                  profesionalizar procesos y tomar decisiones con más claridad.
+                </p>
+                <div className="hero-benefits">
                   <div>
-                    <strong>Selección</strong>
-                    <span>Perfiles mejor alineados al negocio</span>
+                    <CheckCircle2 size={18} />
+                    <span>Procesos más claros y mejor ejecutados</span>
                   </div>
                   <div>
-                    <strong>Cultura</strong>
-                    <span>Equipos más claros, conectados y sostenibles</span>
+                    <CheckCircle2 size={18} />
+                    <span>Selección, desarrollo y estructura con enfoque práctico</span>
                   </div>
                   <div>
-                    <strong>Desarrollo</strong>
-                    <span>Procesos accionables, no burocracia</span>
+                    <CheckCircle2 size={18} />
+                    <span>Acompañamiento cercano, serio y alineado al negocio</span>
                   </div>
                 </div>
               </div>
