@@ -56,22 +56,14 @@ button {
   min-width: 0;
 }
 
-.logo-mark {
-  width: 56px;
-  height: 56px;
+.logo-image {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
   border-radius: 18px;
-  background: linear-gradient(145deg, #2f7cff 0%, #1d4ed8 100%);
-  display: grid;
-  place-items: center;
-  box-shadow: 0 20px 35px rgba(29, 78, 216, 0.25);
-}
-
-.logo-s {
-  color: white;
-  font-weight: 800;
-  font-size: 2rem;
-  line-height: 1;
-  letter-spacing: -0.08em;
+  background: white;
+  padding: 6px;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
 }
 
 .logo-text {
@@ -202,7 +194,7 @@ button {
 
 .hero-panel {
   position: relative;
-  min-height: 470px;
+  min-height: 500px;
 }
 
 .hero-card {
@@ -221,6 +213,20 @@ button {
     white;
 }
 
+.hero-card-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hero-card-brand img {
+  width: min(100%, 220px);
+  height: auto;
+  object-fit: contain;
+}
+
 .hero-card-header {
   display: flex;
   justify-content: space-between;
@@ -237,20 +243,36 @@ button {
   box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.15);
 }
 
-.hero-metrics {
-  margin-top: 28px;
-  display: grid;
-  gap: 18px;
+.hero-card-text {
+  margin: 20px 0 0;
+  color: #334155;
+  line-height: 1.7;
 }
 
-.hero-metrics div {
-  padding: 20px;
-  border-radius: 22px;
+.hero-benefits {
+  margin-top: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.hero-benefits div {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  border-radius: 18px;
   background: rgba(248, 250, 252, 0.95);
   border: 1px solid rgba(148, 163, 184, 0.16);
+  color: #334155;
+  line-height: 1.6;
 }
 
-.hero-metrics strong,
+.hero-benefits svg {
+  color: #1d4ed8;
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
 .service-card h3,
 .value-card h3,
 .process-card h3,
@@ -261,7 +283,6 @@ button {
   color: #0f172a;
 }
 
-.hero-metrics span,
 .service-card p,
 .value-card p,
 .process-card p,
@@ -473,7 +494,7 @@ button {
   }
 
   .hero-panel {
-    min-height: 420px;
+    min-height: 460px;
   }
 }
 
@@ -495,11 +516,16 @@ button {
   }
 
   .hero-panel {
-    min-height: 380px;
+    min-height: 440px;
   }
 
   .hero-card-main {
     inset: 0;
+  }
+
+  .logo-image {
+    width: 64px;
+    height: 64px;
   }
 
   .section,
