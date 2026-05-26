@@ -202,7 +202,7 @@ button {
 
 .hero-panel {
   position: relative;
-  min-height: 530px;
+  min-height: 470px;
 }
 
 .hero-card {
@@ -214,7 +214,7 @@ button {
 
 .hero-card-main {
   position: absolute;
-  inset: 48px 20px 36px 20px;
+  inset: 20px 0 20px 0;
   padding: 28px;
   background:
     linear-gradient(180deg, rgba(47, 124, 255, 0.08) 0%, rgba(255, 255, 255, 1) 44%),
@@ -270,26 +270,6 @@ button {
   line-height: 1.65;
 }
 
-.hero-card-floating {
-  position: absolute;
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  padding: 18px 20px;
-  max-width: 255px;
-}
-
-.top-card {
-  top: 0;
-  right: 0;
-}
-
-.bottom-card {
-  left: 0;
-  bottom: 0;
-}
-
-.hero-card-floating svg,
 .service-icon,
 .value-card svg,
 .testimonial-box svg {
@@ -493,7 +473,7 @@ button {
   }
 
   .hero-panel {
-    min-height: 480px;
+    min-height: 420px;
   }
 }
 
@@ -515,24 +495,11 @@ button {
   }
 
   .hero-panel {
-    min-height: 420px;
+    min-height: 380px;
   }
 
   .hero-card-main {
-    inset: 36px 0 24px 0;
-  }
-
-  .hero-card-floating {
-    max-width: 220px;
-    padding: 14px 16px;
-  }
-
-  .top-card {
-    right: -4px;
-  }
-
-  .bottom-card {
-    left: -4px;
+    inset: 0;
   }
 
   .section,
